@@ -11,7 +11,7 @@ namespace Mothly_Models
         string Name { get; }
         string Description { get; }
 
-        int Refresh { get; }
+        IRefreshTrack Refresh { get; }
         ICollection<IAspect> Aspects { get; }
         ISkillCollection Skills { get; }
         IStuntCollection Stunts { get; }
