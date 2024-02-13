@@ -45,6 +45,7 @@
     <Compile Include="Aspect.cs" />
     <Compile Include="Consequence.cs" />
     <Compile Include="Extra.cs" />
+    <Compile Include="Refresh.cs" />
     <Compile Include="Stress.cs" />
     <Compile Include="Stunt.cs" />
     <Compile Include="Skill.cs" />
