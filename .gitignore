@@ -1,3 +1,4 @@
 
 *.cache
 *.vsidx
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
