@@ -17,13 +17,15 @@ namespace Mothly_Models
     {
         ConsequenceLevel Level { get; }
         string Name { get; }
+        bool Filled { get; }
     }
 
     public class ConsequenceCollection : List<Consequence>, IConsequencesCollection { }
 
     public class Consequence : IConsequence
     {
-        public ConsequenceLevel Level { get; }
-        public string Name { get; }
+        public ConsequenceLevel Level { get; set; }
+        public string Name { get; set; } = "";
+        public bool Filled { get; set; } = false;
     }
 }

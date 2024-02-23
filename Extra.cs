@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Mothly_Models
 {
-    public interface IExtrasCollection : ICollection { }
+    public interface IExtrasCollection : ICollection<IExtra> { }
 
     /// <summary>
     /// Since extras may be a lot of different things, we provide the interface we need,
@@ -14,5 +14,13 @@ namespace Mothly_Models
         
     }
 
-    public class ExtrasCollection<T> : List<T>, IExtrasCollection { }
+    public class ExtrasCollection : List<IExtra>, IExtrasCollection { }
+
+    public class StringExtra : IExtra
+    {
+        public override string ToString()
+        {
+            return "Extras not yet supported";
+        }
+    }
 }

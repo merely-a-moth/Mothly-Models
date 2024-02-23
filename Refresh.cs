@@ -13,9 +13,9 @@
         uint Current { get; }
     }
 
-    public class RefreshTrack
+    public class RefreshTrack : IRefreshTrack
     {
-        public uint Total { get; set; }
-        public uint Current { get; set; }
+        public uint Total { get; set; } = 0;
+        public uint Current { get; set; } = 0;
     }
 }
